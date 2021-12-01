@@ -42,6 +42,7 @@ ul li {
 	border-radius: 10px;
 	margin-right: 10px;
 }
+
 .toDoApp_add {
 	padding: 0px;
 	font-size: 25px;
@@ -50,15 +51,21 @@ ul li {
 	border-radius: 10px;
 	background-color: #b487f0;
 	color: aliceblue;
-}
-/* .toDoApp_inputAdd button {
 	opacity: 0.2;
 	pointer-events: none;
 }
-.toDoApp_inputAdd button.active {
+.toDoApp_add2 {
+	padding: 0px;
+	font-size: 25px;
+	width: 90px;
+	height: 67px;
+	border-radius: 10px;
+	background-color: #b487f0;
+	color: aliceblue;
 	opacity: 1;
 	pointer-events: auto;
-} */
+}
+
 .toDoApp_list {
 	margin-left: -40px;
 	max-height: 210px;

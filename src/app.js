@@ -28,6 +28,14 @@ class ToDoApp extends React.Component {
             text : ''
         })
     }
+    deleteTask = (id) => {
+        let user = [...this.state.items]
+        let userDelete = user.filter(item => item.id != id)
+        this.setState({
+            items: userDelete
+        })
+
+    }
     render() {
         return (
             <div>
@@ -35,7 +43,7 @@ class ToDoApp extends React.Component {
                    <h1>ToDoApp</h1>
                    <div className="toDoApp_inputAdd">
                         <input className="toDoApp_input" onChange ={this.onChangeText} value={this.state.text} typy="text" id="task" name="task"/>
-                        <button className="toDoApp_add" onClick={this.addTask}>
+                        <button className={this.state.text ? 'toDoApp_add2' : "toDoApp_add"} onClick={this.addTask}>
                             Add     
                         </button>
                    </div>
